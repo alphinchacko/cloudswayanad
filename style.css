@@ -124,28 +124,25 @@ a {
 .contact-item {
     display: flex;
     align-items: center;
-    gap: 10px;
+    gap: 15px;
+    padding: 10px 20px;
+    border: 1px solid transparent;
+    border-radius: 30px;
+    transition: all 0.3s ease;
+}
+
+.contact-item:hover {
+    border-color: var(--accent-color);
+    background-color: rgba(212, 175, 55, 0.1);
+    transform: translateY(-2px);
 }
 
 .contact-item i {
     color: var(--accent-color);
+    font-size: 1.5rem;
 }
 
-.social-links-hero {
-    margin-top: 20px;
-    display: flex;
-    gap: 25px;
-}
 
-.social-links-hero a {
-    font-size: 1.8rem;
-    color: var(--text-color);
-}
-
-.social-links-hero a:hover {
-    color: var(--accent-color);
-    transform: translateY(-3px);
-}
 
 /* Animations */
 @keyframes fadeInDown {
